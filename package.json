@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "nodemon code_recaptcha/index.js"
+    "start": "nodemon push_notification_fcm/index.js"
   },
   "keywords": [],
   "author": "",

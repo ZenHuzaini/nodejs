@@ -4,13 +4,15 @@ const nodemailer = require("nodemailer");
 // async..await is not allowed in global scope, must use a wrapper
 async function main() {
     // create reusable transporter object using the default SMTP transport
+    let testAccount = await nodemailer.createTestAccount();
     let transporter = nodemailer.createTransport({
-        host: 'mail.nokiawroclaw.pl',
-        port: 587,
+        host: 'mail.nokiawroclaw.pl', //process.env.SMPT_HOST
+        port: 587, // process.env.SMPT_PORT
         secure: false,
+        connectionTimeout: 12000,
         auth: {
-            user: 'app@hopeit.pl',
-            pass: 'cZ@NAoC7xdbW'
+            user: 'app@hopeit.pl', //process.env.SMPT_USER,
+            pass: 'cZ@NAoC7xdbW' //process.env.SMPT_PASSWORD
         },
         logger: true,
         debug: false // include SMTP traffic in the logs
