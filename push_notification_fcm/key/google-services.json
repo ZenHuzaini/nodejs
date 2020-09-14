@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "61383437512",
+    "firebase_url": "https://bismillah-bisa-sekarang.firebaseio.com",
+    "project_id": "bismillah-bisa-sekarang",
+    "storage_bucket": "bismillah-bisa-sekarang.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61383437512:android:bcc9bf01864462b066c9fd",
+        "android_client_info": {
+          "package_name": "com.google.firebase.quickstart.fcm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61383437512-ia8do5m1tdc7t7ops4ecp2m3793fsthm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.google.firebase.quickstart.fcm",
+            "certificate_hash": "48ec05517d8c142c09e6ec1ade627866a34fb632"
+          }
+        },
+        {
+          "client_id": "61383437512-11dcrndtneuvgv4dpq1uerdfei0vh7g7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnggl2qLBvFTHhlahA6MUvke6GcejCTLo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61383437512-11dcrndtneuvgv4dpq1uerdfei0vh7g7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

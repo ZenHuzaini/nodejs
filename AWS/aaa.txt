@@ -1,0 +1,47 @@
+//aws configure
+aws configure
+
+//cretae template
+sls crete --template
+
+
+//to invoke before deploy
+//hello is the name of the function
+sls invoke local -f hello
+
+//if function and we want to pass the data
+sls invoke local -f hello -d "zen world"
+or if you wanna object
+sls invoke local -f hello -d '{"frst":2, "second":4}'
+
+
+//ADD serverless offline
+//to test 
+npm i serverless-oflfine --save-dev
+
+and add plugin in yaml file below service
+plugin:
+ - serverless-offline
+
+//Then go to events uncomment
+
+//run serverless in the command
+serverless offline
+
+//del=ploy onyly one function
+sls deploy -f whatFunction
+other wise to update all 
+sls deploy
+
+//deploy production stage
+sls deploy -s production
+//only deploy one functionsls deploy -s production -f nameOfTheProduction
+
+
+//take a look at the the log
+sls logs -f functionName -s production --startTime 10m
+sls logs -f functionName -s dev --startTime 10m
+
+//rmove dev version
+sls remove -s dev
+sls remove -s production //to remove production
